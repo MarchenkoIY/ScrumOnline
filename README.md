@@ -1,7 +1,7 @@
 # <img src="client/img/favicon.ico" alt="Logo"> ScrumOnline
-This project was created in the process of studying at IT-Academy.
-The basis of this project is the Scrum methodology.
-It is designed to transfer the interaction with the task board and between specialists with different stacks to the online.
+<p>This project was created in the process of studying at IT-Academy.</p>
+<p>The basis of this project is the Scrum methodology.
+It is designed to transfer the interaction with the task board and between specialists with different stacks to the online.</p>
 
 <img src="demo/demo.gif" alt="Demo">
 
