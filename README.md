@@ -5,6 +5,18 @@ It is designed to transfer the interaction with the task board and between speci
 
 <img src="demo/demo.gif" alt="Demo">
 
+<h2>Technologies</h2>
+
+<ul>
+  <li>SCSS</li>
+  <li>JavaScript</li>
+  <li>Node.js</li>
+  <li>Express.js</li>
+  <li>MongoDB</li>
+  <li>WebPack</li>
+  <li>Templates</li>
+</ul>
+
 <h2>To launch the application</h2>
 
 <h3>To launch client side</h3>
