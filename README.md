@@ -21,8 +21,8 @@ It is designed to transfer the interaction with the task board and between speci
 
 <h3>To launch client side</h3>
 
-<p style="border-radius: 3px; background: gray">npm run start</p>
+`npm run start`
 
 <h3>To launch server side</h3>
 
-<p style="border-radius: 3px; background: gray">npm run start</p>
+`npm run start`
