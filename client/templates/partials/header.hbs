@@ -1,0 +1,6 @@
+<ul>
+    {{#if (ifCond (getUD 'stack') '===' 'manager')}}
+        <li><a href="#/newTask">Добавить задачу</a></li>
+    {{/if}}
+    <li>{{getUD 'name'}}</li>
+</ul>

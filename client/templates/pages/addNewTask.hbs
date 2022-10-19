@@ -1,0 +1,18 @@
+<form name="addNewTask">
+    <h3>Добавьте новую задачу</h3>
+    <label>Название задачи
+        <input type="text" name="taskName" placeholder="Название задачи">
+    </label>
+    <label>Описание задачи
+        <textarea name="taskDescription" placeholder="Описание задачи" maxlength="200" cols="30"></textarea>
+    </label>
+    <select name="select">
+        <option value="front-end">Front-end</option>
+        <option value="back-end">Back-end</option>
+        <option value="design">Design</option>
+    </select>
+    <label>Время на задачу (в часах)
+        <input name="timeleft" type="number" min="1" max="100">
+    </label>
+    <button class="submitButton" type="submit" disabled>Записать</button>
+</form>

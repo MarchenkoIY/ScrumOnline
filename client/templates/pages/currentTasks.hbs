@@ -1,0 +1,10 @@
+<div class="currentTasks">
+    <h1>Текущие задачи</h1>
+    {{#if tasks.length}}
+        {{#each tasks}}
+            {{> currentTask task=this}}
+        {{/each}}
+    {{else}}
+        <h3>Задачи не найдены</h3>
+    {{/if}}
+</div>

@@ -1,0 +1,29 @@
+<div class="taskInfo">
+    <h1>{{task.taskName}}</h1>
+    <p><b>Stack: </b>{{task.stack}}</p>
+    <p><b>Статус: </b>
+        {{#if (ifCond task.status '===' 'New')}}Новая{{/if}}
+
+        {{#if (ifCond task.status '===' 'In Progress')}}В работе{{/if}}
+
+        {{#if (ifCond task.status '===' 'Done')}}Закрыта{{/if}} 
+    </p>
+    <p>
+        {{#if (ifCond task.status '===' 'New')}}
+            <b>Время на задачу:</b> {{#math task.timeleft '/' '3600000'}}{{/math}}ч
+        {{/if}} 
+        {{#if (ifCond task.status '===' 'In Progress')}}
+            <b>Deadline:</b> {{formatDate task.deadline}}
+        {{/if}}
+        {{#if (ifCond task.status '===' 'Done')}}
+            <b>Закрыто:</b> {{formatDate task.closed}}
+        {{/if}}
+    </p>
+    <p><b>Описание задачи:</b> {{task.taskDescription}}</p>
+    {{#if (ifCond task.status '===' 'New')}}
+        <button data-timeleft={{task.timeleft}} data-id={{task._id}} id="toWork">Взять в работу</button>
+    {{/if}}
+    {{#if (ifCond (ifCond task.status '===' 'In Progress') '&&' (ifCond task.assignee '===' (getUD '_id')))}}
+            <button data-id={{task._id}} id="toClose">Завершить</button>
+    {{/if}}
+</div>

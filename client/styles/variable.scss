@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('fonts/Amatic_SC/AmaticSC-Regular.ttf');
+    src: url('fonts/Amatic_SC/AmaticSC-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto/Roboto-Black.ttf');
+    src: url('fonts/Roboto/Roboto-BlackItalic.ttf');
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+    src: url('fonts/Roboto/Roboto-BoldItalic.ttf');
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
+}
+
+//fonts
+
+$Amatic: 'Amatic SC', cursive;
+$Mont: 'Montserrat', sans-serif;
+$Robo: 'Roboto', sans-serif;
+
+//font-size
+
+$f14: 14px;
+$f18: 18px;
+$f20: 20px;
+$f25: 25px;
