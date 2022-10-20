@@ -17,6 +17,50 @@ It is designed to transfer the interaction with the task board and between speci
   <li>Templates</li>
 </ul>
 
+<h2>To set up the database</h2>
+
+You must create database with name 'Project'.
+It must contain 4 collections:
+<ul>
+  <li>Authorization;</li>
+  <li>Chat;</li>
+  <li>Projects;</li>
+  <li>UsersData.</li>
+</ul>
+
+Collection 'Authorization' must contain documents of the form:
+
+```
+{
+  _id: ObjectId('...'), //generated automatically
+  login: '...',
+  password: '...'
+}
+```
+
+Collection 'UsersData' must contain documents of the form:
+
+```
+{
+  _id: ObjectId('...'), //generated automatically
+  name: '...',
+  stack: '...', //'manager' (for adding new tasks), 'front-end', 'back-end' or 'designer
+  authorization: ObjectID('...') //must match the id from the collection 'Authorization'
+}
+```
+
+Collection 'Chat' must contain one document of the form:
+
+```
+{
+  _id: ObjectId('...'), //generated automatically
+  name: 'Chat',
+  messages: []
+}
+```
+
+Collection 'Projects' will be updated automatically after adding new tasks by manager.
+
 <h2>To launch the application</h2>
 
 <h3>To launch client side</h3>
