@@ -2,13 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const MongoClient = require('mongodb').MongoClient;
 const events = require('events');
-const uri = "mongodb+srv://HarryVoron:I1g9o9r6@cluster0.4oqrovt.mongodb.net/?retryWrites=true&w=majority";
+const uri = ''; //paste here your database URI 
 const ObjectID = require('mongodb').ObjectId;
 const app = express();
 const json = express.json();
 const emitter = new events.EventEmitter();
-
-emitter.setMaxListeners(Infinity)
 
 app.use(cors());
 
