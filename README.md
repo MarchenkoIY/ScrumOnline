@@ -69,4 +69,6 @@ Collection 'Projects' will be updated automatically after adding new tasks by ma
 
 <h3>To launch server side</h3>
 
+You have to insert your database URI on line 5 and use in Terminal:
+
 `npm run start`
